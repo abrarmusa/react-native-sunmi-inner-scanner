@@ -1,4 +1,5 @@
-import React,{Component,PropTypes} from 'react';
+import React,{Component} from 'react';
+import PropTypes from 'prop-types';
 import { NativeModules,
     requireNativeComponent,
     View,
@@ -39,7 +40,7 @@ export class SunmiScannerView extends Component {
             PropTypes.string,
             PropTypes.number
         ]),
-        onCodeScan: React.PropTypes.func,
+        onCodeScan: PropTypes.func,
         scanInterval:PropTypes.oneOfType([
             PropTypes.number
         ]),
